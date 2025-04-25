@@ -48,7 +48,7 @@
       <div class="page-content">Enter your age</div>
         <br />
         <!-- Numeric Textfield -->
-        <form action="movie_result.php" method="get">
+        <form action="answer.php" method="get">
           <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="text" name="movieforage" pattern="-?[0-9]*(\.[0-9]+)?" id="movieforage" />
             <label class="mdl-textfield__label" for="movieforage">enter age...</label>

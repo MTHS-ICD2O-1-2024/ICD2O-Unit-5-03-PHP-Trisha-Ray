@@ -53,28 +53,29 @@
           // process
           if ($movieRating >= 17) {
             // output
-            echo "If you are" . $movieRating . "br />";
+            echo "If you are " . $movieRating . "<br />";
             echo "You can see R rated movies.";
           }
           // process
           else if ($movieRating >= 13) {
             // output
-            echo "If you are" . $movieRating . "br />";
+            echo "If you are " . $movieRating . "<br />";
             echo "You can see PG-13 rated movies.";
           }
           // process
           else if ($movieRating >= 13) {
             // output
-            echo "If you are" . $movieRating . "br />";
+            echo "If you are " . $movieRating . "<br />";
             echo "You can see PG-13 rated movies.";
           }
           // process
           else if ($movieRating >= 5) {
             // output
-            echo "If you are" . $movieRating . "br />";
+            echo "If you are " . $movieRating . "<br />";
             echo "You can see G or PG rated movies.";
           } else {
-            echo "You are to young to see most things.";
+            echo "If you are " . $movieRating . "<br />";
+            echo "Uhh you are too young to see most things.";
           }
           ?>
           <div class="page-content-answer">
