@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- ICS2O-Unit2-04-HTML-MDL -->
+<!-- ICS2O-Unit5-03-HTML-MDL -->
 <html lang="en-ca">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area of Triangle, PHP" />
+  <meta name="description" content="Watch a movie, with PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Trisha Ray" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,7 @@
     sizes="16x16"
     href="./favicon-16x16.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Area of Triangle, PHP</title>
+  <title>Watch a movie, with PHP</title>
 </head>
 
 <body>
@@ -38,33 +38,50 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area Of Triangle, PHP</span>
+        <span class="mdl-layout-title">Watch a movie, with PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/area_of_trinagle.png" alt="Area of Triangle Image"/>
+        <img src="./images/movie_ratings.jpg" alt="movie rating" />
       </div>
-  <div class="page-content-php">
-    <div id="user-info">
-      <?php
-      $baselength = $_GET["base-length"];
-      $heightlength = $_GET["height-length"];
-
-      // process
-      $area = ($baselength * $heightlength) /2;
-      // output
-      echo "If a Triangle has a base length of =" . $baselength . " cm and a height of =" . $heightlength . " cm:";
-      echo "<br />";
-      echo "<br />";
-      echo "The area of the Triangle is " . $area . " cm².";
-      ?>
-    </div>
-    <div class="page-content-answer">
-      <a href="./index.php">Return...</a>
-    </div>
-  </div>
-  </main>
+      <div class="page-content-php">
+        <div id="user-info">
+          <?php
+          //input
+          $movieRating = $_GET["movieforage"];
+          // process
+          if ($movieRating >= 17) {
+            // output
+            echo "If you are" . $movieRating . "br />";
+            echo "You can see R rated movies.";
+          }
+          // process
+          else if ($movieRating >= 13) {
+            // output
+            echo "If you are" . $movieRating . "br />";
+            echo "You can see PG-13 rated movies.";
+          }
+          // process
+          else if ($movieRating >= 13) {
+            // output
+            echo "If you are" . $movieRating . "br />";
+            echo "You can see PG-13 rated movies.";
+          }
+          // process
+          else if ($movieRating >= 5) {
+            // output
+            echo "If you are" . $movieRating . "br />";
+            echo "You can see G or PG rated movies.";
+          } else {
+            echo "You are to young to see most things.";
+          }
+          ?>
+          <div class="page-content-answer">
+            <a href="./index.php">Return</a>
+          </div>
+        </div>
+    </main>
   </div>
 </body>
 

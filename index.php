@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- ICS2O-Unit2-04-HTML-MDL -->
+<!-- ICS2O-Unit5-03-HTML-MDL -->
 <html lang="en-ca">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="The Area & Perimeter program" />
+  <meta name="description" content="Watch a movie, with PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Mr. Coxall" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,7 +29,7 @@
     type="image/png"
     sizes="16x16"
     href="./favicon-16x16.png" />
-  <title>Area of triangle in PHP</title>
+  <title>Watch a movie, with PHP</title>
 </head>
 
 <body>
@@ -38,40 +38,36 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area of triangle in PHP</span>
+        <span class="mdl-layout-title">Watch a movie, with PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/area_of_trinagle.png" alt="Area Of Triangle" />
+        <img src="./images/movie_ratings.jpg" alt="movie ratings" />
       </div>
-      <br />
-      <div class="page-content">Enter the length and width in cm.</div>
-      <div class="page-content-php">
-        <form action="answer.php" method="GET">
-          <p>Base Length</p>
+      <div class="page-content">Enter your age</div>
+        <br />
+        <!-- Numeric Textfield -->
+        <form action="movie_result.php" method="get">
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-length">
-            <label class="mdl-textfield__label" for="base-length">Base Length Here...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          <br />
-          <p>Heigth Length</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="height-length">
-            <label class="mdl-textfield__label" for="height-length">Heigth length Here...</label>
+            <input class="mdl-textfield__input" type="text" name="movieforage" pattern="-?[0-9]*(\.[0-9]+)?" id="movieforage" />
+            <label class="mdl-textfield__label" for="movieforage">enter age...</label>
+            <!-- class "mdl-textfield__error" -->
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
           <!-- Accent-colored raised button with ripple -->
-          <button
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
             type="submit">
-            Calculate
+            Find Movie Type
           </button>
         </form>
+        <br />
+        <div class="page-content-answer">
+          <div id="results"></div>
         </div>
     </main>
   </div>
 </body>
+
 </html>
